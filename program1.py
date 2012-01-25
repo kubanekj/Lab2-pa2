@@ -21,9 +21,7 @@ def round_four(x):
 	
 for i in range(0,y):
 	trueVal = trueVal + increment
-	print 'Actual ', trueVal
 	roundedVal = round_four(roundedVal + increment)
-	print 'Rounded ', roundedVal
 incrementError = abs(trueVal - roundedVal)
 
 print 'Actual: ' , trueVal
@@ -34,4 +32,6 @@ trueMultVal = y * increment
 roundedMultVal = round_four(y*increment)
 multError = abs(trueMultVal - roundedMultVal)
 
+print 'Actual: ' , trueMultVal
+print 'Computed: ' , roundedMultVal
 print 'The absolute error for \"t = i * dt\" is ', multError 
